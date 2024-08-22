@@ -1,0 +1,148 @@
+/* CSS สำหรับการตกแต่งพื้นฐาน */
+body {
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* การตกแต่ง Header */
+header {
+  background-color: #99743c;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+header .logo img {
+  height: 120px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* การตกแต่ง Hero Section */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  background-color: #abc2c2;
+  color: #110f0f;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* การตกแต่ง Main Content */
+main {
+  padding: 2rem;
+}
+
+/* การตกแต่ง About Section */
+.about {
+  margin-bottom: 2rem;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* การตกแต่ง Services Section */
+.services {
+  margin-bottom: 2rem;
+}
+
+/* การตกแต่ง Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+/* การใช้คำสั่งย่อ background */
+element {
+    background: #4CAF50 url('path/to/image.jpg') no-repeat center; /*https://th.pikbest.com/backgrounds/ */
+  }
+  
+  .service-levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.service-levels .level {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-levels .level img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
